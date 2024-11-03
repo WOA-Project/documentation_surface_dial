@@ -1,14 +1,4 @@
-# Overwritten HID Descriptor by Surface Dial Filter Driver (SDFD)
-
-## Parameters
-
-```
-XPhysicalMax: { 0x63, 0x0C }
-XLogicalMax:  { 0x80, 0x25 }
-
-YPhysicalMax: { 0x42, 0x08 }
-YLogicalMax:  { 0x20, 0x1C }
-```
+# Default HID Descriptor
 
 ## Raw HID Descriptor
 
@@ -17,23 +7,22 @@ YLogicalMax:  { 0x20, 0x1C }
 A1 00 05 09 09 01 15 00 25 01 35 00 45 01 65 00
 55 00 75 01 95 01 81 02 05 0D 09 33 81 02 09 00
 A1 02 95 06 81 03 05 01 09 37 26 FF 7F 45 00 75
-10 95 01 81 06 C1 00 09 30 15 00 26 80 25 46 63
-0C 65 11 55 0E 81 42 09 31 26 20 1C 46 42 08 81
-42 05 0D 09 48 15 3A 25 3A 35 3A 45 3A 55 0F 75
-08 81 03 05 0E 09 01 A1 02 09 24 15 00 25 FF 35
-00 45 00 65 00 55 00 91 42 09 21 15 01 25 07 91
-42 09 25 26 D0 07 75 10 91 42 C1 00 05 0D 09 00
-A1 02 05 01 09 48 15 00 26 10 0E 46 10 0E B1 02
-C1 00 05 0E 09 01 A1 02 09 24 25 FF 45 00 75 08
-B1 42 09 20 15 01 25 07 B1 42 09 28 25 0A B1 42
-09 25 26 D0 07 75 10 B1 42 15 00 25 01 45 01 75
-01 95 18 B1 03 85 02 09 22 17 37 00 01 00 27 37
-00 01 00 45 00 75 20 95 01 B1 02 09 11 A1 02 05
-0A 09 03 15 00 75 08 B1 02 09 04 B1 02 09 05 B1
-02 C1 00 05 0E 09 10 A1 02 05 0A 09 03 15 03 25
-03 36 03 10 46 03 10 B1 02 09 04 15 04 25 04 36
-04 10 46 04 10 B1 02 09 05 15 05 25 05 B1 02 C1
-00 C1 00 C1 00 C1 00 C1 00
+10 95 01 81 06 C1 00 09 30 15 00 25 00 65 11 55
+0E 81 42 09 31 81 42 05 0D 09 48 15 3A 25 3A 35
+3A 45 3A 55 0F 75 08 81 03 05 0E 09 01 A1 02 09
+24 15 00 25 FF 35 00 45 00 65 00 55 00 91 42 09
+21 15 01 25 07 91 42 09 25 26 D0 07 75 10 91 42
+C1 00 05 0D 09 00 A1 02 05 01 09 48 15 00 26 10
+0E 46 10 0E B1 02 C1 00 05 0E 09 01 A1 02 09 24
+25 FF 45 00 75 08 B1 42 09 20 15 01 25 07 B1 42
+09 28 25 0A B1 42 09 25 26 D0 07 75 10 B1 42 15
+00 25 01 45 01 75 01 95 18 B1 03 85 02 09 22 17
+37 00 01 00 27 37 00 01 00 45 00 75 20 95 01 B1
+02 09 11 A1 02 05 0A 09 03 15 00 75 08 B1 02 09
+04 B1 02 09 05 B1 02 C1 00 05 0E 09 10 A1 02 05
+0A 09 03 15 03 25 03 36 03 10 46 03 10 B1 02 09
+04 15 04 25 04 36 04 10 46 04 10 B1 02 09 05 15
+05 25 05 B1 02 C1 00 C1 00 C1 00 C1 00 C1 00
 ```
 
 ## Parsed HID Descriptor
@@ -76,14 +65,11 @@ B1 42 09 20 15 01 25 07 B1 42 09 28 25 0A B1 42
 0xC1, 0x00,        //       End Collection
 0x09, 0x30,        //       Usage (X)
 0x15, 0x00,        //       Logical Minimum (0)
-0x26, 0x80, 0x25,  //       Logical Maximum (9600)
-0x46, 0x63, 0x0C,  //       Physical Maximum (3171)
+0x25, 0x00,        //       Logical Maximum (0)
 0x65, 0x11,        //       Unit (System: SI Linear, Length: Centimeter)
 0x55, 0x0E,        //       Unit Exponent (-2)
 0x81, 0x42,        //       Input (Data,Var,Abs,No Wrap,Linear,Preferred State,Null State)
 0x09, 0x31,        //       Usage (Y)
-0x26, 0x20, 0x1C,  //       Logical Maximum (7200)
-0x46, 0x42, 0x08,  //       Physical Maximum (2114)
 0x81, 0x42,        //       Input (Data,Var,Abs,No Wrap,Linear,Preferred State,Null State)
 0x05, 0x0D,        //       Usage Page (Digitizer)
 0x09, 0x48,        //       Usage (0x48)
@@ -195,5 +181,5 @@ B1 42 09 20 15 01 25 07 B1 42 09 28 25 0A B1 42
 0xC1, 0x00,        //   End Collection
 0xC1, 0x00,        // End Collection
 
-// 329 bytes
+// 319 bytes
 ```
