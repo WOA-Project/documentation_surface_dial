@@ -10,8 +10,8 @@ Surface Dial HID Collection 01:
 
 Host Digitizer Misc:
 
-[Minimal Official Operating Conditions for On Screen functionality](MinimalOfficialSetupRequirement.md)
-[IPTS Vendor Collection (MSHW0137)](SurfaceDigitizerSpecialCollectionDescriptor.md)
+- [Minimal Official Operating Conditions for On Screen functionality](MinimalOfficialSetupRequirement.md)
+- [IPTS Vendor Collection (MSHW0137)](SurfaceDigitizerSpecialCollectionDescriptor.md)
 
 ---
 
